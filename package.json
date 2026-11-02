@@ -1,0 +1,12 @@
+{
+  "name": "automation>exampletest",
+  "type": "module",
+  "devDependencies": {
+    "@wdio/local-runner": "^10.1.0",
+    "@wdio/mocha-framework": "^10.1.0",
+    "@wdio/spec-reporter": "^10.1.0"
+  },
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.js"
+  }
+}
