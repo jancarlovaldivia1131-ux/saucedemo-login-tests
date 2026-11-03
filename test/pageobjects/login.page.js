@@ -4,10 +4,13 @@ import Page from './page.js';
 /**
  * sub page containing specific selectors and methods for a specific page
  */
-class LoginPage extends Page {   
-    users = ['standard_user', 'problem_user', 'error_user', 'visual_user'];
-    password = 'secret_sauce';
+class LoginPage extends Page {
+    credentials = {
+    users: ['problem_user', 'error_user', 'visual_user', 'standard_user'],
+    password: 'secret_sauce' 
 
+    
+};
     /**
      * define selectors using getter methods
      */
