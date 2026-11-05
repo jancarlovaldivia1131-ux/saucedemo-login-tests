@@ -1,5 +1,6 @@
 import { expect, browser } from '@wdio/globals'
 import LoginPage from '../pageobjects/login.page.js'
+import ProductsPage from '../pageobjects/products.page.js'
 
 
 describe('My Login application', () => {
@@ -11,7 +12,9 @@ describe('My Login application', () => {
         await expect(browser).toHaveUrl(/inventory/)
   
      }
-    
+    await ProductsPage.addToCart('Sauce Labs Backpack')
+    await expect(ProductsPage.cartBadge).toHaveText('1')
+
     })
 })
 
