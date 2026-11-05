@@ -35,7 +35,9 @@ class LoginPage extends Page {
         await this.inputPassword.setValue(password);
         await this.btnSubmit.click();
     }
-
+get errorMessage () {
+    return $('[data-test="error"]');
+}
     /**
      * overwrite specific options to adapt it to page object
      */
